@@ -7,12 +7,12 @@ import sys
 sys.path.append('../../')
 
 from ars_lib.ars import ARSAgent, Normalizer, Policy
-from spotmicro.util.gui import GUI
-from spotmicro.Kinematics.SpotKinematics import SpotModel
-from spotmicro.GaitGenerator.Bezier import BezierGait
-from spotmicro.OpenLoopSM.SpotOL import BezierStepper
-from spotmicro.GymEnvs.spot_bezier_env import spotBezierEnv
-from spotmicro.spot_env_randomizer import SpotEnvRandomizer
+from hkq.util.gui import GUI
+from hkq.Kinematics.SpotKinematics import SpotModel
+from hkq.GaitGenerator.Bezier import BezierGait
+from hkq.OpenLoopSM.SpotOL import BezierStepper
+from hkq.GymEnvs.spot_bezier_env import spotBezierEnv
+from hkq.spot_env_randomizer import SpotEnvRandomizer
 
 import os
 

@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
 import numpy as np
-from spotmicro.Kinematics.LegKinematics import LegIK
-from spotmicro.Kinematics.LieAlgebra import RpToTrans, TransToRp, TransInv, RPY, TransformVector
+from hkq.Kinematics.LegKinematics import LegIK
+from hkq.Kinematics.LieAlgebra import RpToTrans, TransToRp, TransInv, RPY, TransformVector
 from collections import OrderedDict
 
 

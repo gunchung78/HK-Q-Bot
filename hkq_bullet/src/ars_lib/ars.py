@@ -2,12 +2,12 @@
 import pickle
 import numpy as np
 from scipy.signal import butter, filtfilt
-from spotmicro.GaitGenerator.Bezier import BezierGait
-from spotmicro.OpenLoopSM.SpotOL import BezierStepper
-from spotmicro.Kinematics.SpotKinematics import SpotModel
-from spotmicro.Kinematics.LieAlgebra import TransToRp
+from hkq.GaitGenerator.Bezier import BezierGait
+from hkq.OpenLoopSM.SpotOL import BezierStepper
+from hkq.Kinematics.SpotKinematics import SpotModel
+from hkq.Kinematics.LieAlgebra import TransToRp
 import copy
-from spotmicro.util.gui import GUI
+from hkq.util.gui import GUI
 
 np.random.seed(0)
 

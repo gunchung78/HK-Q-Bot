@@ -22,9 +22,9 @@ sys.path.append(rospack.get_path('mini_ros') + '/../')
 
 sys.path.append('../../')
 
-from spotmicro.GymEnvs.spot_bezier_env import spotBezierEnv
-from spotmicro.Kinematics.SpotKinematics import SpotModel
-from spotmicro.GaitGenerator.Bezier import BezierGait
+from hkq.GymEnvs.spot_bezier_env import spotBezierEnv
+from hkq.Kinematics.SpotKinematics import SpotModel
+from hkq.GaitGenerator.Bezier import BezierGait
 
 # Controller Params
 STEPLENGTH_SCALE = 0.06

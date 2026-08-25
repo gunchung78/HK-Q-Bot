@@ -19,10 +19,10 @@ import struct
 rospack = rospkg.RosPack()
 sys.path.append(rospack.get_path('mini_ros') + '/../')
 sys.path.append('../../')
-from spotmicro.Kinematics.SpotKinematics import SpotModel
-from spotmicro.GaitGenerator.Bezier import BezierGait
+from hkq.Kinematics.SpotKinematics import SpotModel
+from hkq.GaitGenerator.Bezier import BezierGait
 from spot_bullet.src.ars_lib.ars import ARSAgent, Normalizer, Policy
-from spotmicro.GymEnvs.spot_bezier_env import spotBezierEnv
+from hkq.GymEnvs.spot_bezier_env import spotBezierEnv
 
 send = np.zeros(12)
 try:

@@ -17,10 +17,10 @@ import math
 import re
 import numpy as np
 from . import motor
-from spotmicro.util import pybullet_data
+from hkq.util import pybullet_data
 print(pybullet_data.getDataPath())
-from spotmicro.Kinematics.SpotKinematics import SpotModel
-import spotmicro.Kinematics.LieAlgebra as LA
+from hkq.Kinematics.SpotKinematics import SpotModel
+import hkq.Kinematics.LieAlgebra as LA
 
 INIT_POSITION = [0, 0, 0.25]
 INIT_RACK_POSITION = [0, 0, 1]

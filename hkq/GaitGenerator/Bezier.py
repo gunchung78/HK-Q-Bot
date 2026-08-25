@@ -1,5 +1,5 @@
 import numpy as np
-from spotmicro.Kinematics.LieAlgebra import TransToRp
+from hkq.Kinematics.LieAlgebra import TransToRp
 import copy
 
 STANCE = 0

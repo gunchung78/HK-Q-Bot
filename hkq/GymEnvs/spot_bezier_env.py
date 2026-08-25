@@ -9,20 +9,20 @@ import pybullet_data
 from gym import spaces
 from gym.utils import seeding
 from pkg_resources import parse_version
-from spotmicro import spot
+from hkq import spot
 import pybullet_utils.bullet_client as bullet_client
 from gym.envs.registration import register
-from spotmicro.OpenLoopSM.SpotOL import BezierStepper
-from spotmicro.spot_gym_env import spotGymEnv
-import spotmicro.Kinematics.LieAlgebra as LA
-from spotmicro.spot_env_randomizer import SpotEnvRandomizer
+from hkq.OpenLoopSM.SpotOL import BezierStepper
+from hkq.spot_gym_env import spotGymEnv
+import hkq.Kinematics.LieAlgebra as LA
+from hkq.spot_env_randomizer import SpotEnvRandomizer
 
 SENSOR_NOISE_STDDEV = spot.SENSOR_NOISE_STDDEV
 
 # Register as OpenAI Gym Environment
 register(
     id="SpotMicroEnv-v1",
-    entry_point='spotmicro.GymEnvs.spot_bezier_env:spotBezierEnv',
+    entry_point='hkq.GymEnvs.spot_bezier_env:spotBezierEnv',
     max_episode_steps=1000,
 )
 

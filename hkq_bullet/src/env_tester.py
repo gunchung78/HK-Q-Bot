@@ -8,15 +8,15 @@ import sys
 
 sys.path.append('../../')
 
-from spotmicro.GymEnvs.spot_bezier_env import spotBezierEnv
-from spotmicro.util.gui import GUI
-from spotmicro.Kinematics.SpotKinematics import SpotModel
-from spotmicro.Kinematics.LieAlgebra import RPY
-from spotmicro.GaitGenerator.Bezier import BezierGait
-from spotmicro.spot_env_randomizer import SpotEnvRandomizer
+from hkq.GymEnvs.spot_bezier_env import spotBezierEnv
+from hkq.util.gui import GUI
+from hkq.Kinematics.SpotKinematics import SpotModel
+from hkq.Kinematics.LieAlgebra import RPY
+from hkq.GaitGenerator.Bezier import BezierGait
+from hkq.spot_env_randomizer import SpotEnvRandomizer
 
 # TESTING
-from spotmicro.OpenLoopSM.SpotOL import BezierStepper
+from hkq.OpenLoopSM.SpotOL import BezierStepper
 
 import time
 import os

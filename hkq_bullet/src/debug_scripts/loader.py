@@ -8,7 +8,7 @@ import numpy as np
 import sys
 
 sys.path.append('../../../')
-from spotmicro.util import pybullet_data as pd
+from hkq.util import pybullet_data as pd
 
 physicsClient = p.connect(p.GUI)  # or p.DIRECT for non-graphical version
 p.setAdditionalSearchPath(pybullet_data.getDataPath())  # optionally

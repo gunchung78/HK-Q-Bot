@@ -19,13 +19,13 @@ import pybullet_data
 from gym import spaces
 from gym.utils import seeding
 from pkg_resources import parse_version
-from spotmicro import spot
+from hkq import spot
 import pybullet_utils.bullet_client as bullet_client
 from gym.envs.registration import register
-from spotmicro.heightfield import HeightField
-from spotmicro.OpenLoopSM.SpotOL import BezierStepper
-import spotmicro.Kinematics.LieAlgebra as LA
-from spotmicro.spot_env_randomizer import SpotEnvRandomizer
+from hkq.heightfield import HeightField
+from hkq.OpenLoopSM.SpotOL import BezierStepper
+import hkq.Kinematics.LieAlgebra as LA
+from hkq.spot_env_randomizer import SpotEnvRandomizer
 
 NUM_SUBSTEPS = 5
 NUM_MOTORS = 12
@@ -46,7 +46,7 @@ spot_URDF_VERSION_MAP = {DEFAULT_URDF_VERSION: spot.Spot}
 # Register as OpenAI Gym Environment
 register(
     id="SpotMicroEnv-v0",
-    entry_point='spotmicro.spot_gym_env:spotGymEnv',
+    entry_point='hkq.spot_gym_env:spotGymEnv',
     max_episode_steps=1000,
 )
 

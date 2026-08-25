@@ -10,12 +10,12 @@ import sys
 
 sys.path.append('../../')
 
-from spotmicro.GymEnvs.spot_bezier_env import spotBezierEnv
-from spotmicro.Kinematics.SpotKinematics import SpotModel
-from spotmicro.GaitGenerator.Bezier import BezierGait
+from hkq.GymEnvs.spot_bezier_env import spotBezierEnv
+from hkq.Kinematics.SpotKinematics import SpotModel
+from hkq.GaitGenerator.Bezier import BezierGait
 
 # TESTING
-from spotmicro.OpenLoopSM.SpotOL import BezierStepper
+from hkq.OpenLoopSM.SpotOL import BezierStepper
 
 import time
 
